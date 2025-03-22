@@ -1,5 +1,5 @@
 n = 100;
-S = randperm(10*n); % 產生到 1000
+S = randperm(10*n); % 隨機產生到 1 - 1000 不重複的數字
 num_A = S(1:n); % 取前 100 個數
 x = num_A(randi(n)); % 隨機取索引值
 fprintf('x is %d\n', x);

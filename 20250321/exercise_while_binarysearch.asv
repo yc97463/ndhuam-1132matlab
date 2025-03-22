@@ -12,9 +12,14 @@ display(num_B);
 fprintf("init:\tL:%2d, R:%2d\n",L ,R);
 k = 0;
 while L <= R
-    M = (L+R)/2;
-    if x > num_B[]
-
+    M = ceil((L+R)/2;
+    if x > num_B(M)
+        L = M+1;
+    elseif x < num_B(M)
+        R = M-1;
+    else
+        k = M;
+        break;
     end
     fprintf("loop: %d, M: %2d, L: %2d, R: %2d,\n", count, M, L, R)
     count = count+1;
