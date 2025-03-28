@@ -37,6 +37,10 @@ for i = 1:n
     y3(i) = f3(c)/6*(a(i)-c)^3;
 end
 plot(a, f(a)); hold on;
+plot(a, y, 'r'); title("one term");
+figure;
+
+plot(a, f(a)); hold on;
 plot(a, y+y1, 'r'); title("two terms");
 figure;
 
