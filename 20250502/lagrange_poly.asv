@@ -1,0 +1,10 @@
+function y = lagrange_poly(v, x, i)
+% v: input value
+% x: n distinct knots
+% i: the i'th lagrance polynomical
+
+y = ones(size(v));
+n = length(x);
+for j = 1:n
+    if j == 1
+       
